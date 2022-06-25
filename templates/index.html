@@ -31,10 +31,14 @@
             <strong>My play list</strong>
             <span>UI/UX DESIGN & DEVELOPMENT</span>
         </h1>
-        <a href="#" class="menu"><i class="fas fa-bars"></i></a>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">URL</span>
+            <input type="text" class="form-control" id="music_url" placeholder="music url" aria-label="music-url" aria-describedby="basic-addon1">
+        </div>
+        <button type="button" class="btn btn-secondary" id="url_submit" onclick="save_url();">저장</button>
         <p>2022 Designed by book</p>
 
-        <section>
+        <section id="wrap">
             <article class="on">
                 <div class="inner">
                     <div class="pic">
@@ -104,8 +108,13 @@
                     </div>
                 </div>
             </article>
-
         </section>
+        <div class="btnPrev" onclick="prev();">
+            <span>PREV MUSIC</span>
+        </div>
+        <div class="btnNext" onclick="next();">
+            <span>NEXT MUSIC</span>
+        </div>
     </figure>
 <script src="../static/js/index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.js" crossorigin="anonymous"></script>
