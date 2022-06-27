@@ -31,83 +31,16 @@
             <strong>My play list</strong>
             <span>UI/UX DESIGN & DEVELOPMENT</span>
         </h1>
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">URL</span>
-            <input type="text" class="form-control" id="music_url" placeholder="music url" aria-label="music-url" aria-describedby="basic-addon1">
+        <div id="url_area">
+            <div class="input-group mb-3">
+            <input type="text" class="form-control" id="music_url" placeholder="http://" aria-label="music-url" aria-describedby="basic-addon1">
         </div>
         <button type="button" class="btn btn-secondary" id="url_submit" onclick="save_url();">저장</button>
+        </div>
+
         <p>2022 Designed by book</p>
 
         <section id="wrap">
-            <article class="on">
-                <div class="inner">
-                    <div class="pic">
-                        <div class="dot"></div>
-                    </div>
-                    <div class="txt">
-                        <h2>음악제목</h2>
-                        <p>가수</p>
-                        <ul>
-                            <li class="pause">
-                                <i class="fas fa-pause" onclick="pause(this);"></i>
-                            </li>
-                            <li class="play">
-                                <i class="fas fa-play" onclick="play(this);"></i>
-                            </li>
-                            <li class="load">
-                                 <i class="fas fa-redo-alt" onclick="load(this)"></i>
-                            </li>
-                        </ul>
-                        <audio src ="../static/music/Blizzards.mp3"></audio>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="inner">
-                    <div class="pic">
-                        <div class="dot"></div>
-                    </div>
-                    <div class="txt">
-                        <h2>음악제목</h2>
-                        <p>가수</p>
-                        <ul>
-                            <li class="pause">
-                                <i class="fas fa-pause"></i>
-                            </li>
-                            <li class="play">
-                                <i class="fas fa-play"></i>
-                            </li>
-                            <li class="load">
-                                <i class="fas fa-redo-alt"></i>
-                            </li>
-                        </ul>
-                        <audio src ="../static/music/Blizzards.mp3"></audio>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="inner">
-                    <div class="pic">
-                        <div class="dot"></div>
-                    </div>
-                    <div class="txt">
-                        <h2>음악제목</h2>
-                        <p>가수</p>
-                        <ul>
-                            <li class="pause">
-                                <i class="fas fa-pause"></i>
-                            </li>
-                            <li class="play">
-                                <i class="fas fa-play"></i>
-                            </li>
-                            <li class="load">
-                                <i class="fas fa-redo-alt"></i>
-                            </li>
-                        </ul>
-                        <audio src ="../static/music/Blizzards.mp3"></audio>
-                    </div>
-                </div>
-            </article>
         </section>
         <div class="btnPrev" onclick="prev();">
             <span>PREV MUSIC</span>
